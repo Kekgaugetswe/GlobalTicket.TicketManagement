@@ -1,4 +1,5 @@
 using AutoMapper;
+using GlobalTicket.TicketManagement.Application.Contracts.Features.Events.Queries.GetEventsList;
 using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using MediatR;

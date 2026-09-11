@@ -3,11 +3,11 @@ using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using MediatR;
 
-namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Events;
+namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Events.Queries.GetEventDetail;
 
 public class GetEventDetailQueryHandler(
     IAsyncRepository<Event> _eventRepository,
-    IAsyncRepository<Category> _categoryRepository,
+    IAsyncRepository<Domain.Entities.Category> _categoryRepository,
     IMapper _mapper)
     : IRequestHandler<GetEventDetailQuery, EventDetailVm>
 {

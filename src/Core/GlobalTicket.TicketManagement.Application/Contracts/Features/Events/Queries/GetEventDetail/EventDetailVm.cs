@@ -1,4 +1,4 @@
-namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Events;
+namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Events.Queries.GetEventDetail;
 
 public class EventDetailVm
 {
