@@ -13,7 +13,6 @@
 
     <ItemGroup>
       <Folder Include="Contracts\Features\Category\Commands\" />
-      <Folder Include="Contracts\Features\Events\Commands\" />
       <Folder Include="Contracts\Features\Order\" />
     </ItemGroup>
 

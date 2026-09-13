@@ -1,10 +1,9 @@
 using AutoMapper;
-using GlobalTicket.TicketManagement.Application.Contracts.Features.Events.Queries.GetEventsList;
 using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 using GlobalTicket.TicketManagement.Domain.Entities;
 using MediatR;
 
-namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Events;
+namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Events.Queries.GetEventsList;
 
 public class GetListEventsListHandler(IMapper mapper, IAsyncRepository<Event> eventRepository)
     : IRequestHandler<GetEventsListQuery, List<EventListVm>>

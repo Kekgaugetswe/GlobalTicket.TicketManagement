@@ -4,5 +4,5 @@ namespace GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 
 public interface ICategoryRepository : IAsyncRepository<Category>
 {
-    Task<List<Category>> GetCategoryiesWithEvents(bool requestHistoryEvents);
+    Task<List<Category>> GetCategoryiesWithEvents(bool includePassedEvents);
 }
