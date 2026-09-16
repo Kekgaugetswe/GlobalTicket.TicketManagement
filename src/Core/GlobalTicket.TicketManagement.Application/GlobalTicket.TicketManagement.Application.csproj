@@ -12,8 +12,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts\Features\Category\Commands\" />
       <Folder Include="Contracts\Features\Order\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.1" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
     </ItemGroup>
 
 </Project>

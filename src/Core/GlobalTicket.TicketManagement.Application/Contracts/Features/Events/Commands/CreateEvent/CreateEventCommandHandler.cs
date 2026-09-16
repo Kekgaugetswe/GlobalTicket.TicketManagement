@@ -12,6 +12,12 @@ public class CreateEventCommandHandler(IEventRepository eventRepository, IMapper
     {
         
         var @event = mapper.Map<Event>(request);
+        var validator =  new CreateCommandEventValidator(eventRepository);
+        
+        var validationResult = await validator.ValidateAsync(request);
+        if (validationResult.Errors.Count > 0)
+            throw new Exceptions.ValidationException(validationResult);
+        
         @event = await eventRepository.AddAsync(@event);
 
         return @event.EventId;
