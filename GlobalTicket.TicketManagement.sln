@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTicket.TicketManageme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTicket.TicketManagement.Infastructure", "src\Infrastructure\GlobalTicket.TicketManagement.Infastructure\GlobalTicket.TicketManagement.Infastructure.csproj", "{176AB4DF-2506-49B4-8324-D253B381DB0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "src\API\WebApplication1\WebApplication1.csproj", "{9252D450-5072-4276-BA02-2832B5CEBA67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.TicketManagement.Api", "src\API\Global.TicketManagement.Api\Global.TicketManagement.Api.csproj", "{528A72A1-E3CE-46EE-8265-0DD8AE786755}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +36,13 @@ Global
 		{176AB4DF-2506-49B4-8324-D253B381DB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176AB4DF-2506-49B4-8324-D253B381DB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176AB4DF-2506-49B4-8324-D253B381DB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9252D450-5072-4276-BA02-2832B5CEBA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9252D450-5072-4276-BA02-2832B5CEBA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9252D450-5072-4276-BA02-2832B5CEBA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9252D450-5072-4276-BA02-2832B5CEBA67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528A72A1-E3CE-46EE-8265-0DD8AE786755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528A72A1-E3CE-46EE-8265-0DD8AE786755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528A72A1-E3CE-46EE-8265-0DD8AE786755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528A72A1-E3CE-46EE-8265-0DD8AE786755}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
