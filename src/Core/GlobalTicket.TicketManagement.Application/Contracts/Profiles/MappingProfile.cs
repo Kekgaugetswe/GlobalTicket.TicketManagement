@@ -17,7 +17,7 @@ public class MappingProfile : Profile
         CreateMap<Event, EventDetailVm>().ReverseMap();
         CreateMap<Category, CategoryDto>().ReverseMap();
         
-        CreateMap<Category, CategoryListVm>();
+        CreateMap<Category, CategoryListVm>().ForMember(dest=> dest.Id, opt => opt.MapFrom(src => src.CategoryId)).ReverseMap();
         CreateMap<Category, CategoryEventListVm>();
 
         CreateMap<Event, CreateEventCommand>().ReverseMap();

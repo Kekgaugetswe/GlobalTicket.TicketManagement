@@ -12,7 +12,7 @@ public class GetCategoryListWithEventsQueryHandler(ICategoryRepository categoryR
 
     public async Task<List<CategoryEventListVm>> Handle(GetCategoriesListwithEventsQuery request, CancellationToken cancellationToken)
     {
-        var list = await _categoryRepository.GetCategoryiesWithEvents(request.HistoryEvents);
+        var list = await _categoryRepository.GetCategoryiesWithEvents(request.IncludeHistory);
         throw new NotImplementedException();
     }
 }

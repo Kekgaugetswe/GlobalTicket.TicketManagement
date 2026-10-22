@@ -1,5 +1,6 @@
 using GlobalTicket.TicketManagement.Application.Contracts.Infrastructure;
 using GlobalTicket.TicketManagement.Application.Contracts.Models.Mail;
+using GlobalTicket.TicketManagement.Infastructure.FileExport;
 using GlobalTicket.TicketManagement.Infastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +14,7 @@ public static class InfrastructureServiceRegistration
         services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
 
         services.AddTransient<IEmailService, EmailService>();
+        services.AddTransient<ICsvExporter, CsvExporter>();
         return services;
 
     }

@@ -4,5 +4,5 @@ namespace GlobalTicket.TicketManagement.Application.Contracts.Features.Category.
 
 public class GetCategoriesListwithEventsQuery : IRequest<List<CategoryEventListVm>>
 {
-    public bool HistoryEvents { get; set; }
+    public bool IncludeHistory { get; set; }
 }
